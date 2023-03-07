@@ -2,7 +2,7 @@ import React from "react";
 
 import Task from "../Task";
 
-const TodoList = ({ todos, onDeleted }) => {
+const TodoList = ({ todos, onDeleted, onToggleDone }) => {
     const elements = todos.map((item) => {
         const { id, ...itemsRest } = item;
 
@@ -10,6 +10,7 @@ const TodoList = ({ todos, onDeleted }) => {
             <Task key={id}
                 {...itemsRest}
                 onDeleted={() => onDeleted(id)}
+                onToggleDone={() => onToggleDone(id)}
             />
         );
     });
