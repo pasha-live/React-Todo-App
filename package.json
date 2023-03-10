@@ -61,7 +61,8 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,html.css}": "prettier --write",
-    "src/**/*.js": "eslint --fix"
+    "*.{ts,js}": [
+      "npm run lint:fix"
+    ]
   }
 }
