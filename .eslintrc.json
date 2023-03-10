@@ -96,6 +96,9 @@
                     "src/"
                 ]
             }   
+        },
+        "react": {
+            "version": "detected"
         }
     }
 }
