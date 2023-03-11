@@ -9,7 +9,7 @@ export default class TodoApp extends Component {
     super();
     this.maxId = 100;
     this.state = {
-      todoData: [this.createTodoItem('проверка')],
+      todoData: [],
       filter: 'all',
     };
   }
